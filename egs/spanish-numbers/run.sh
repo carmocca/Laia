@@ -16,7 +16,7 @@ SDIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)";
 mkdir -p data/;
 # download dataset
 [ -f data/Spanish_Number_DB.tgz ] || \
-  wget -P data/ https://www.prhlt.upv.es/corpora/spanish-numbers/Spanish_Number_DB.tgz;
+  wget --no-check-certificate -P data/ https://www.prhlt.upv.es/corpora/spanish-numbers/Spanish_Number_DB.tgz;
 # extract it
 [ -d data/Spanish_Number_DB ] || \
   tar -xzf data/Spanish_Number_DB.tgz -C data/;

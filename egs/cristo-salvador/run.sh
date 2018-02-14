@@ -17,7 +17,7 @@ mkdir -p data;
 
 # download corpus
 [ -f data/CScorpus_DB.tgz ] || \
-  wget -P data/ https://www.prhlt.upv.es/projects/multimodal/cs/files/CScorpus_DB.tgz;
+  wget --no-check-certificate -P data/ https://www.prhlt.upv.es/projects/multimodal/cs/files/CScorpus_DB.tgz;
 # extract it
 [ -d data/corpus ] || \
   mkdir data/corpus && tar -xzf data/CScorpus_DB.tgz -C data/corpus;
