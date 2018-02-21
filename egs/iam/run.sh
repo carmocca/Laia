@@ -25,8 +25,8 @@ exit 1;
 ./steps/decode_net.sh --partition aachen "train/aachen/lstm1d_h128.t7";
 
 # Step 6. Output raw network label pseudo log-likelihoods.
-./steps/output_net.sh --partition aachen "train/aachen/lstm1d_h128.t7";
+#./steps/output_net.sh --partition aachen "train/aachen/lstm1d_h128.t7";
 
 # Step 7. Decode using external n-gram language model.
-./steps/decode_lm.sh --partition aachen \
-    decode/lkh/forms/aachen/{va,te}_lstm1d_h128.scp;
+#./steps/decode_lm.sh --partition aachen \
+#    decode/lkh/forms/aachen/{va,te}_lstm1d_h128.scp;

@@ -22,6 +22,6 @@ exit 1;
 ./steps/decode_net.sh "train/lstm1d_h128.t7";
 
 # Step 5. Decode using a word n-gram LM.
-./steps/decode_lm.sh "train/lstm1d_h128.t7";
+#./steps/decode_lm.sh "train/lstm1d_h128.t7";
 
 exit 0;

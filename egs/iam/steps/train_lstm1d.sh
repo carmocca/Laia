@@ -12,14 +12,14 @@ SDIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)";
     echo "Missing $(pwd)/utils/parse_options.inc.sh file!" >&2 && exit 1;
 
 batch_chunk_size=0;
-batch_size=16;
-cnn_batch_norm=true;
+batch_size=10;
+cnn_batch_norm=false;
 cnn_dropout="0 0 0.2 0.2 0.2";
 cnn_maxpool_size="2,2 2,2 2,2 0 0";
 cnn_num_features="16 32 48 64 80";
 cnn_type=leakyrelu;
 continue_train=false;
-early_stop_epochs=80;
+early_stop_epochs=20;
 gpu=1;
 height=128;
 learning_rate=0.0003;
@@ -30,7 +30,7 @@ partition="aachen";
 rnn_num_layers=5;
 rnn_num_units=256;
 rnn_dropout=0.5;
-use_distortions=true;
+use_distortions=false;
 help_message="
 Usage: ${0##*/} [options]
 
